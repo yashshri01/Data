@@ -1,0 +1,38 @@
+{
+  "Application": {
+    "Name": "CredentialScannerDemo",
+    "Environment": "Development"
+  },
+
+  "ConnectionStrings": {
+    "DefaultConnection": "Server=localhost;Database=DemoDB;User Id=admin;Password=Admin@123;"
+  },
+
+  "JwtSettings": {
+    "Issuer": "CredentialScannerAPI",
+    "Audience": "CredentialScannerUsers",
+    "SecretKey": "jwt-secret-key-demo-123456",
+    "TokenExpiryMinutes": 60
+  },
+
+  "RegistrationSettings": {
+    "RequireEmailConfirmation": true,
+    "PasswordMinLength": 8,
+    "AllowSpecialCharacters": true
+  },
+
+  "EmailSettings": {
+    "SmtpServer": "smtp.gmail.com",
+    "SmtpPort": 587,
+    "SenderEmail": "noreply@demoapp.com",
+    "SenderPassword": "EmailPassword@123",
+    "EnableSsl": true
+  },
+
+  "Logging": {
+    "LogLevel": {
+      "Default": "Information",
+      "Microsoft": "Warning"
+    }
+  }
+}
